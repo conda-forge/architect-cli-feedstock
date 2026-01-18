@@ -22,10 +22,10 @@ pnpm-licenses generate-disclaimer --prod --output-file=third-party-licenses.txt
 mkdir -p ${PREFIX}/bin
 tee ${PREFIX}/bin/architect << EOF
 #!/bin/sh
-exec \${CONDA_PREFIX}/lib/node_modules/@angular-devkit/architect-cli/bin/architect.js "\$@"
+exec \${CONDA_PREFIX}/lib/node_modules/@angular-devkit/architect-cli/bin/cli.js "\$@"
 EOF
 chmod +x ${PREFIX}/bin/architect
 
 tee ${PREFIX}/bin/architect.cmd << EOF
-call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\@angular-devkit\architect-cli\bin\architect.js %*
+call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\@angular-devkit\architect-cli\bin\cli.js %*
 EOF
