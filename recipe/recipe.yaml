@@ -1,5 +1,5 @@
 context:
-  version: "0.2101.5"
+  version: "0.2102.0"
 
 package:
   name: architect-cli
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/@angular-devkit/architect-cli/-/architect-cli-${{ version }}.tgz
-  sha256: 0407e184a6a6c5bb922fedeb62e6637ed647d26e79499eb81f3061fe700f8dbe
+  sha256: bbad8499a8bef6fabe67d6cf4b98deeba1758958fbe27f8d2c6e94fe68fdf897
 
 build:
   number: 0
